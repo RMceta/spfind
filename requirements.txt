@@ -1,0 +1,9 @@
+scapy
+requests
+socket
+threading
+sys
+re
+subprocess
+json
+argparse
