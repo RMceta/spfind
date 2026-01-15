@@ -62,7 +62,7 @@ sudo python3 spfind.py 192.168.1.1 -p 100-200 -g json
 
 ## 🛠 Requisitos
 
-- Python 3.7 o superior
-- Sistema operativo: Windows, Linux(Recomendado), macOS 
+- Python 3.7 o superior 
 - Permisos de superusuario para operaciones ARP
+
 
