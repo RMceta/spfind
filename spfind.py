@@ -12,8 +12,6 @@ CIAN = "\033[1;36m"
 BLANCO = "\033[1;37m"
 AMARILLO = "\033[1;33m"
 
-# ----------------------------- Funciones ----------------------------- #
-
 def get_mac_address(ip):
     arp_request = ARP(pdst=ip)
     ether = Ether(dst="ff:ff:ff:ff:ff:ff")
@@ -69,8 +67,6 @@ def scan_ports(host, port_range, num_threads=100):
 
     return open_ports
 
-# ----------------------------- Principal ----------------------------- #
-
 def scan_info(host, port_range=(1, 1000), guardar=None):
     print("\n")
     print("------------------------------------------------")
@@ -118,8 +114,6 @@ def guardar_resultado(data, formato):
     except Exception as e:
         print(f"{AMARILLO}Error al guardar resultados:{BLANCO} {e}")
 
-# ----------------------------- CLI ----------------------------- #
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Escáner de red y puertos")
     parser.add_argument("host", help="Dirección IP o dominio del objetivo")
@@ -149,3 +143,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
